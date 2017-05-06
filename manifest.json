@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Search Plus",
+  "version": "0.1",
+  "description": "add search choices to context menu",
+  "permissions": [
+    "https://*.baidu.com/",
+    "https://*.google.com/",
+
+    "contextMenus",
+    "cookies",
+    "debugger"
+  ],
+  "background": {
+    "scripts": ["main.js"]
+  }
+}
