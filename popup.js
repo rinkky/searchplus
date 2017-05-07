@@ -24,7 +24,11 @@ $(document).ready(function(){
             var id = $(this).attr("id");
             searches[id][2] = $(this).is(":checked");
             console.log(searches);
-            saveSearcheEngines();
         });
     }
+});
+
+$(window).blur(function(){
+    saveSearcheEngines();
+    chrome.runtime.reload();
 });
